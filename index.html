@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe de Pasantías - EXITOS C.A</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>EXITOS </h1>
+        <p>Proyecto de Pasantías - Administración de Empresas Mención Informática</p>
+    </header>
+
+    <main>
+        
+        <section id="empresa-info">
+            <h2>Acerca de la Empresa</h2>
+            <p>Breve descripción de la compañía, su historia y su actividad.</p>
+        </section>
+
+<section id="contacto-sedes">
+    <h2>Información y Contacto de Sedes</h2>
+    <p>Haga clic en una sede para ver sus datos de contacto:</p>
+
+    <div class="botones-sedes">
+        <button onclick="mostrarSede('sede-principal')">Contacto Sede Principal</button>
+        <button onclick="mostrarSede('sede-secundaria')">Contacto Sede Sucursal</button>
+    </div>
+
+    <div id="sede-principal" class="info-sede" style="display: none;">
+        <h3>Sede Bejuma</h3>
+        <p>
+            <strong>Teléfono:</strong> 
+            <a href="https://wa.me/584245207708" target="_blank">
+                +58 (424) 520-7708
+            </a>
+        </p>
+        <p><strong>Dirección:</strong> Av. bolivar, CC Nasser Local N° 3 Diagonal a la licoreria Los Dos Amigos. Bejima Estado Carabobo.</p>
+    </div>
+
+    <div id="sede-secundaria" class="info-sede" style="display: none;">
+        <h3>Sede Nirgua</h3>
+        <p>
+            <strong>Teléfono:</strong> 
+            <a href="https://wa.me/584245207708" target="_blank">
+                +58 (424) 520-7708
+            </a>
+        </p>
+        <p><strong>Dirección:</strong> Av. bolivar, al Lado del Banco de Venezuela (MOVISTAR) Nirgua.</p>
+    </div>
+
+</section>
+
+        <section id="calculadora">
+    <h2>Opciones de Financiamiento Disponibles</h2>
+    <p>Haz clic en una entidad para ver sus condiciones de pago quincenales:</p>
+
+    <div class="botones-financiamiento">
+        <button onclick="alternarMensaje('info-naranja')">Tu Zona Naranja</button>
+        <button onclick="alternarMensaje('info-krece')">Krece</button>
+        <button onclick="alternarMensaje('info-cashea')">Cashea</button>
+    </div>
+
+    <div id="info-naranja" class="info-financiamiento" style="display: none;">
+        <h3>Tu Zona Naranja</h3>
+        <p>Tu zona naranja ofrece pagos de cuotas !quincenales de 3, 4, 5 y 6 pagos¡, los cuales se comienzan a cancelar 15 días después del día del pago de la inicial. La **inicial es del 30%** del precio del equipo deseado.</p>
+        <p class="enlace-app">Para consultar Tu Zona Naranja y su catálogo disponible da clic aquí y obtén la app: <a href="https://play.google.com/store/apps/details?id=com.techlandllc.tuzonanaranja&pli=1" target="_blank">ENLACE DE TU ZONA NARANJA</a></p>
+    </div>
+    
+    <div id="info-krece" class="info-financiamiento" style="display: none;">
+        <h3>Krece</h3>
+        <p>Krece cuenta con cuotas !quincenales de 3, 4 y 6 pagos¡, los cuales se comienzan a cancelar 15 días después del día del pago de la inicial. La inicial puedes elegir entre dar el **40%, 45% o 50%** de inicial del precio del equipo deseado.</p>
+        <p class="enlace-app">Para consultar Krece haz clic aquí y obtén la app: <a href="https://play.google.com/store/apps/details?id=com.application.krece&hl=es" target="_blank">ENLACE DE KRECE</a></p>
+    </div>
+
+    <div id="info-cashea" class="info-financiamiento" style="display: none;">
+        <h3>Cashea</h3>
+        <p>Cashea cuenta con cuotas !quincenales de 3 pagos¡ los cuales se comienzan a cancelar 14 días después del día del pago de la inicial, la compra minima debe de ser igual o mayor a 25$. La inicial depende del nivel del usuario: Nivel 1 es 60%, Nivel 2 es 50%, y apartir de los Niveles 3,4,5 y 6 es 40% del equipo o producto deseado.</p>
+        <p class="enlace-app">Para consultar Cashea haz clic aquí y obtén la app: <a href="https://play.google.com/store/apps/details?id=com.cashea.app&hl=es-VE" target="_blank">ENLACE DE CASHEA</a></p>
+    </div>
+
+    <hr style="margin: 40px auto;">
+
+   
+<section id="productos-envios">
+    <h2>Catálogo de Productos y Precios</h2>
+    
+    <div class="categoria-acordeon">
+        <button class="boton-acordeon" onclick="alternarContenido('contenido-tvs')">
+            1. Televisores (Smart TV)
+        </button>
+        <div id="contenido-tvs" class="contenido-acordeon">
+            
+            <div class="detalle-producto">
+                <img src="images/Televisor_TCL_32_HD_Smart_Android_Tv_32S4500A.jpg" alt="Televisor TCL 32 Pulgadas HD" class="imagen-producto"> 
+                <div class="info-producto">
+                    <p><strong>TV TCL 32" HD</p>
+                    <p class="descripcion-producto">
+                        •Pantalla: 32 pulgadas, HD.<br>
+                        •Sistema Operativo: Google TV.<br>
+                        •Imagen: Soporte HDR10.<br>
+                        •Audio: Dolby Audio.<br>
+                        •Conectividad: Wi-Fi, 2x HDMI, 1x USB, Ethernet.<br>
+                        •Extras: Google Assistant integrado y Chromecast para transmitir desde el celular.<br>
+                    </p>
+                    <div class="stock-info">
+                        <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="detalle-producto">
+            <img src="images/TV_TCL_32_FHD_QLED.jpg" alt="[NOMBRE TELEVISOR 2]" class="imagen-producto"> 
+            <div class="info-producto">
+                <p><strong>TV TCL 32" FHD QLED</p>
+                <p class="descripcion-producto">                    
+                        •Pantalla: 32 pulgadas FHD QLED.<br>
+                        •Resolución: Full HD (1920 x 1080).<br>                    
+                        •Sistema Operativo: Google TV.<br>
+                        •Imagen: Soporte para HDR10 y tasa de refresco de 60Hz.<br>
+                        •Sonido: Altavoces de 16W con Dolby Audio.<br>
+                        •Conectividad: 2 HDMI, 1 USB 2.0, Wi-Fi Dual-Band, Bluetooth 5.0, Ethernet.<br>
+                        •Diseño: Estilo metálico sin bordes perfil muy delgado.<br>
+                        •Extras: Google Assistant integrado y Chromecast para transmitir desde el celular.<br>
+                </p>
+                <div class="stock-info">
+                    <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="detalle-producto">
+            <img src="images/TV_TCL_40_FHD_QLED.webp" alt="[NOMBRE TELEVISOR 3]" class="imagen-producto"> 
+            <div class="info-producto">
+                <p><strong>TV TCL 40" FHD QLED</p>
+                <p class="descripcion-producto">            
+                    •Pantalla: 40 pulgadas FHD QLED.<br>
+                    •Resolución: Full HD (1920 x 1080).<br>                    
+                    •Sistema Operativo: Google TV.<br>
+                    •Imagen: Soporte para HDR10 y tasa de refresco de 60Hz.<br>
+                    •Sonido: Altavoces de 16W con Dolby Audio.<br>
+                    •Conectividad: 2 HDMI, 1 USB 2.0, Wi-Fi Dual-Band, Bluetooth 5.0, Ethernet.<br>
+                    •Diseño: Estilo metálico sin bordes perfil muy delgado.<br>
+                    •Extras: Google Assistant integrado y Chromecast para transmitir desde el celular.<br>                    
+                </p>
+                <div class="stock-info">
+                    <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="categoria-acordeon">
+        <button class="boton-acordeon" onclick="alternarContenido('contenido-telefonos')">
+            2. Teléfonos Inteligentes (Smartphones)
+        </button>
+        <div id="contenido-telefonos" class="contenido-acordeon">           
+        
+            <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-samsung')">
+                    Marca: SAMSUNG
+                </button>
+                <div id="sub-samsung" class="contenido-subacordeon">
+                    <div class="detalle-producto">
+                        <img src="images/Samsung_Galaxy_A07.jpg" alt="Smartphone Samsung Galaxy S" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Samsung Galaxy A07</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.7" HD+, 90Hz.<br>
+                                •Procesador: MediaTek Helio G99.<br>
+                                •Cámara Principal: Dual 50MP.<br>
+                                •Batería: 5000 mAh.<br>
+                                •Resistencia: IP54.<br>                                
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Samsung_Galaxy_A16.jpg" alt="Smartphone Samsung Galaxy A55" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Samsung Galaxy A16</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.7" Super AMOLED FHD+, 90Hz.<br>
+                                •Procesador:  Exynos 1330.<br>
+                                •Cámara Principal: Triple 50MP.<br>
+                                •Batería: 5000 mAh.<br> 
+                                •Carga Rápida 25W.<br>
+                                •Resistencia: IP54.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/SAMSUNG_A16_5G.jpg" alt="[MODELO SAMSUNG 3]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Samsung Galaxy A16 5G</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.7" Super AMOLED FHD+, 90Hz.<br>
+                                •Procesador: Exynos 1330.<br>
+                                •Cámara Principal: Triple 50MP.<br>
+                                •Batería: 5000 mAh.<br>
+                                •Carga Rápida 25W.<br>
+                                •Resistencia: IP54.<br>
+                                •Conectividad: 5G.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/SAMSUNG_A26_5G.jpg" alt="[MODELO SAMSUNG 4]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Samsung Galaxy A26 5G</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.7" Super AMOLED FHD+, 120Hz.<br>
+                                •Cámara Principal: 50MP con OIS.<br>
+                                •Procesador: Exynos 1380.<br>
+                                •Batería: 5000 mAh.<br>
+                                •Carga Rápida 25W.<br>
+                                •Resistencia: IP67.<br>
+                                •Conectividad: 5G.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Samsung-Galaxy_A36_ 5G.jpg" alt="[MODELO SAMSUNG 5]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Samsung Galaxy A36 5G</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.7" Super AMOLED FHD+, 120Hz.<br>
+                                •Cámara Principal: 50MP con OIS.<br>
+                                •Procesador: Snapdragon 6 Gen 3.<br>
+                                •Batería: 5000 mAh.<br>
+                                •Carga Rápida: 45W.<br>
+                                •Diseño: Marco metálico, trasera Gorilla Glass Victus+.<br>
+                                •Resistencia: IP67.<br>
+                                •Conectividad: 5G.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Samsung-Galaxy_A56_5G.jpg" alt="[MODELO SAMSUNG 6]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Samsung Galaxy A56 5G</p>
+                            <p class="descripcion-producto">
+                               •Pantalla: 6.7" Super AMOLED FHD+, 120Hz.<br>
+                               •Cámara Principal: 50MP con OIS + 12MP Ultra Gran Angular.<br>
+                               •Procesador: Exynos 1580 (Gama media-alta con GPU AMD).<br>
+                               •Batería: 5000 mAh.<br>
+                               •Carga Rápida: 45W.<br>                                                      
+                               •Resistencia: IP67.<br>
+                               •Conectividad: 5G.<br>          
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-xiaomi')">
+                    Marca: XIAOMI
+                </button>
+                <div id="sub-xiaomi" class="contenido-subacordeon">
+                    
+                    <div class="detalle-producto">
+                        <img src="images/Redmi_A5.JPG.jpg" alt="[MODELO XIAOMI 1]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Redmi A5</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.88" HD+, 120Hz.<br>
+                                •Cámara Principal: Dual 32MP con IA.<br>
+                                •Batería: 5200 mAh.<br>
+                                •Procesador: UNISOC T7250.<br>
+                                •RAM: 3GB o 4GB.<br>
+                                •ROM: 64GB/128GB.<br>
+                                •Seguridad: Lector de huellas lateral y Desbloqueo facial.<br>
+                            </p>
+
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span> 
+                            </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Redmi_15c.JPG.jpg" alt="[MODELO XIAOMI 2]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Redmi 15C</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.9" IPS LCD, 120Hz.<br>
+                                •Procesador: MediaTek Helio G81-Ultra.<br>
+                                •Cámara Principal: Dual 50MP con IA.<br>
+                                •Batería: 6000 mAh.<br>
+                                •Carga Rápida: 33W.<br>
+                                •Resistencia: IP64.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Redmi_15.JPG.jpg" alt="[MODELO XIAOMI 3]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Redmi 15</p>
+                            <p class="descripcion-producto">
+                               • Pantalla: 6.9" FHD+, 144Hz.<br>
+                               • Procesador: Snapdragon 685.<br>                                
+                               • Cámara Principal: 50MP Dual.<br>
+                               • Batería: 7000 mAh.<br>
+                               • Carga Rápida: 33W.<br>
+                               • Resistencia: IP64.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                         <img src="images/Redmi_Note_14.JPG.jpg" alt="[MODELO XIAOMI 4]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Redmi Note 14</p>
+                            <p class="descripcion-producto">                           
+                                •Pantalla: 6.67" AMOLED, 120Hz.<br>
+                                •Cámara Principal: 108MP con OIS.<br>
+                                •Procesador: Helio G99-Ultra.<br>
+                                •Batería: 5500 mAh.<br>
+                                •Carga Rápida: 45W.<br>
+                                •Resistencia: IP68.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Redmi_Note_14_Pro_4G.jpg" alt="[MODELO XIAOMI 5]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Redmi Note 14 Pro</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.67" AMOLED, 120Hz.<br>
+                                •Cámara Principal: 200MP con OIS.<br>
+                                •Procesador: Dimensity 7300-Ultra.<br>      
+                                •Batería: 5500 mAh.<br>
+                                •Carga Rápida: 45W Turbo.<br>
+                                •Resistencia: IP64.<br>
+                                •Conectividad: 4G.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Redmi_Note_14_Pro_+_5G.jpg" alt="[MODELO XIAOMI 6]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Redmi Note 14 Pro + 5G</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.67" AMOLED 1.5K.<br>
+                                •Cámara Principal: 200MP con OIS.<br>
+                                •Procesador: Snapdragon 7s Gen 3.<br>
+                                •Batería: 5110 mAh.<br>
+                                •Carga Más Rápida: 120W HyperCharge.<br>
+                                •Protección: Certificación IP68.<br>
+                                •Conectividad: 5G.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Poco_X7_5G.JPG.jpg" alt="[MODELO XIAOMI 7]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Poco X7 5G</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.67" AMOLED 1.5K, 120Hz.<br>
+                                •Procesador: MediaTek Dimensity 7300-Ultra.<br>
+                                •Cámara Principal: 50MP con OIS.<br>
+                                •Batería: 5110 mAh.<br>
+                                •Carga Rápida: 45W Turbo.<br>
+                                •Resistencia: Certificación IP68.<br>
+                                •Conectividad: 5G.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Poco_X7_Pro_5g.JPG.jpg" alt="[MODELO XIAOMI 8]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Poco X7 Pro 5G</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.67" AMOLED 1.5K, 120Hz.<br>
+                                •Procesador: MediaTek Dimensity 8400-Ultra.<br>
+                                •Cámara Principal: 50MP con OIS.<br>
+                                •Batería: 6000 mAh.<br>
+                                •Carga Más Rápida: 90W HyperCharge.<br>
+                                •Resistencia: Certificación IP68.<br>
+                                •Memoria: RAM LPDDR5X y almacenamiento UFS 4.0.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                            
+
+            <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-motorola')">
+                    Marca: MOTOROLA
+                </button>
+                <div id="sub-motorola" class="contenido-subacordeon">
+                    <div class="detalle-producto">
+                        <img src="images/Moto_G05.jpg" alt="[MODELO MOTOROLA 1]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Moto G05</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.67" HD+, 90Hz.<br>
+                                •Procesador: MediaTek Helio G81.<br>
+                                •Cámara Principal: 50MP con IA.<br>
+                                •Batería: 5200 mAh.<br>                 
+                                •Resistencia: IP54.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Moto_G15.jpg" alt="[MODELO MOTOROLA 2]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Moto G15</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.72" FHD+, 60Hz.<br>
+                                •Procesador: MediaTek Helio G81 Extreme.<br>
+                                •Cámara Principal: Dual 50MP + 5MP.<br>
+                                •Batería: 5200 mAh<br>
+                                •Carga 18W.<br>                      
+                                •Resistencia: IP54.<br>
+                                •Material: Acabado en Cuero Vegano.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Moto_G55_5G.jpg" alt="[MODELO MOTOROLA 3]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Moto G55 5G</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.5" FHD+, 120Hz.<br>
+                                •Procesador: MediaTek Dimensity 7025.<br>
+                                •Cámara Principal: 50MP con OIS.<br>
+                                •Batería: 5000 mAh.<br>
+                                •Carga Rápida: 33W TurboPower.<br>
+                                •Resistencia: IP54.<br>
+                                •Conectividad: 5G.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Moto_G75_5G.jpg" alt="[MODELO MOTOROLA 4]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Moto G75 5G</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.78" FHD+, 120Hz.<br>
+                                •Procesador: Snapdragon 6 Gen 3.<br>
+                                •Cámara Principal: 50MP con OIS.<br>
+                                •Batería: 5000 mAh.<br>
+                                •Carga: 30W.<br>
+                                •carga inalámbrica: 15W.<br>
+                                •Resistencia: IP68.<br>
+                                •Conectividad: 5G.<br>                               
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Moto_G85_5G.jpg" alt="[MODELO MOTOROLA 5]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Moto G85 5G</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.67" OLED FHD+, 120Hz.<br>
+                                •Procesador: Snapdragon 6s Gen 3.<br>
+                                •Cámara Principal: 50MP con OIS.<br>
+                                •Cámara Frontal: 32MP.<br>
+                                •Batería: 5000 mAh.<br>
+                                •Carga 30W.<br>
+                                •Resistencia: IP54.<br>
+                                •Extra: Lector de huellas en pantalla.<br>
+                                •Conectividad: 5G.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Motorola_Edge_50_Fusion.jpg" alt="[MODELO MOTOROLA 5]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Motorola Edge 50 Fusion</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.67" pOLED Curva con 120Hz.<br>
+                                •Procesador: Qualcomm Snapdragon 6s Gen 1.<br>
+                                •Cámara Principal: 50MP con OIS.<br>
+                                •Cámara Frontal: 32MP.<br>
+                                •Batería: 5000 mAh.<br>
+                                •Carga 68W.<br>
+                                •Resistencia: IP68.<br>
+                                •Conectividad: 5G.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+
+            <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-realme')">
+                    Marca: REALME
+                </button>
+                <div id="sub-realme" class="contenido-subacordeon">
+                    <div class="detalle-producto">
+                        <img src="images/Realme_Note_60X.jpg" alt="[MODELO REALME 1]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Realme Note 60X</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.74" HD+, 90Hz.<br>
+                                •Procesador: UNISOC T612.<br>
+                                •Cámara Principal: 8MP.<br>
+                                •Batería: 5000 mAh.<br>
+                                •Carga: 10W.<br>
+                                •Resistencia: IP54.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Realme_C75.jpg" alt="[MODELO REALME 2]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Realme C75</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.72" FHD+, 90Hz.<br>
+                                •Procesador: MediaTek Helio G92 Max.<br>
+                                •Cámara Principal: 50MP con IA.<br>
+                                •Batería: 5828 mAh.<br>
+                                •Carga Rápida: 45W.<br>
+                                •Resistencia: IP69.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Realme_14_5G.jpg" alt="[MODELO REALME 3]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Realme 14 5G</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.67" AMOLED FHD+, 120Hz.<br>
+                                •Procesador: Snapdragon 6 Gen 4.<br>
+                                •Cámara Principal: 50MP con OIS.<br>
+                                •Batería: 6000 mAh Titán.<br>
+                                •Carga Rápida: 45W.<br>
+                                •Resistencia: IP69.<br>
+                                •Conectividad: 5G.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-honor')">
+                    Marca: HONOR
+                </button>
+                <div id="sub-honor" class="contenido-subacordeon">
+                    <div class="detalle-producto">
+                        <img src="images/Honor_play_10.jpg" alt="[MODELO HONOR 1]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Honor Play 10</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.74" LCD, 720p HD+.<br>
+                                •Procesador: MediaTek Helio G81 (4G).<br>
+                                •Cámara Principal: 13MP.<br>
+                                •Cámara Frontal: 5MP.<br>
+                                •Batería: 5000 mAh.<br>                                
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Honor_X5b_Plus.jpg" alt="[MODELO HONOR 2]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p>Honor X5b Plus</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.61" TFT LCD, 720p HD+, 120Hz.<br>
+                                •Procesador: MediaTek Helio G36.<br>
+                                •Cámara Principal: 50MP + 2MP.<br>
+                                •Cámara Frontal: 5MP.<br>
+                                Batería: 5200 mAh.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Honor_X6c.jpg" alt="[MODELO HONOR 3]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Honor X6c</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.61" TFT LCD, 720p HD+, 120Hz.<br>
+                                •Procesador: MediaTek Helio G81 Ultra.<br>
+                                •Cámara Principal: 50MP + Lente auxiliar.<br>
+                                •Cámara Frontal: 5MP.<br>
+                                •Batería: 5200 mAh o 5300 mAh.<br>
+                                •Carga Rápida: 35W SuperCharger.<br>
+                                •Resistencia: IP64.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Honor_X7c.jpg" alt="[MODELO HONOR 4]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Honor X7c</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.77" TFT-LCD, 720p HD+.<br>
+                                •Procesador: Snapdragon 685.<br>
+                                •Cámara Principal: 108MP.<br>
+                                •Batería: 5200 mAh.<br>
+                                •Resistencia:IP64.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Honor_X7d.jpg" alt="[MODELO HONOR 5]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Honor X7d</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.77" TFT-LCD, 720p HD+.<br>
+                                •Procesador: Snapdragon 685.<br>
+                                •Cámara Principal: 108MP.<br>
+                                •Batería: 6350 mAh.<br>
+                                •Resistencia: IP65.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Honor_X8c.jpg" alt="[MODELO HONOR 6]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Honor X8c</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.7".<br>
+                                •Procesador: Snapdragon 685.<br>
+                                •Cámara Principal: 108MP + 5MP.<br>
+                                •Camara Frontal: 50MP.<br>
+                                •Batería: 5000 mAh.<br>
+                                •Resistencia: IP64.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Magic_7_Lite.jpg" alt="[MODELO HONOR 7]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p>Honor Magic 7 Lite</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.78" AMOLED 1.5K Curva, 120Hz.<br>
+                                •Procesador: Snapdragon 6 Gen 1.<br>
+                                •Cámara Principal: 108MP OIS + 5MP Gran Angular.<br>                                
+                                •Batería: 6600 mAh.<br>
+                                •Carga Rápida: 66W SuperCharge.<br>
+                                •Resistencia: IP65M y HONOR Shield Glass 3.0.<br>
+                                •Conectividad: 5G.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-infinix')">
+                    Marca: INFINIX
+                </button>
+                <div id="sub-infinix" class="contenido-subacordeon">
+                    <div class="detalle-producto">
+                        <img src="images/Infinix_Smart_10.jpg" alt="[MODELO INFINIX 1]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Smart 10</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.67" HD+, hasta 120Hz.<br>
+                                •Procesador: UNISOC T7250.<br>
+                                •Cámara Principal: 8MP.<br>
+                                •Batería: 5000 mAh.<br>
+                                •Carga: 15W.<br>
+                                •Resistencia: IP64.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Infinix_Hot_50_Pro_Plus.jpg" alt="[MODELO INFINIX 2]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Hot 50 Pro Plus</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.78" AMOLED Curva FHD+, 120Hz.<br>
+                                •Procesador: Helio G100.<br>
+                                •Cámara Principal: 50MP Dual.<br>
+                                •Batería: 5000 mAh.<br>
+                                •Carga Rápida: 33W.<br> 
+                                •Resistencia: IP54.<br>                             
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Infinix_Hot_60i.jpg" alt="[MODELO INFINIX 3]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Hot 60I</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.7" HD+ 120Hz.<br>
+                                •Procesador: Helio G81 Ultimate.<br>
+                                •Cámara Principal: 50MP.<br>
+                                •Batería: 5160 mAh.<br>
+                                •Carga Rápida: 45W.<br>
+                                •Resistencia: IP64.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Infinix_Hot_60_Pro.jpg" alt="[MODELO INFINIX 4]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Hot 60 Pro</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.78" AMOLED FHD+, 144Hz.<br>
+                                •Procesador: Helio G200.<br>
+                                •Cámara Principal: 50MP.<br>
+                                •Batería: 5160 mAh.<br>
+                                •Carga Rápida: 45W.<br>  
+                                •Resistencia: IP64.<br>                              
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Infinix_Hot_60_Pro_Plus.jpg" alt="[MODELO INFINIX 5]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Hot 60 Pro Plus</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.78" AMOLED 1.5K Curva, 144Hz.<br>
+                                •Procesador: Helio G200.<br>
+                                •Cámara Principal: 50MP.<br>
+                                •Batería: 5160 mAh.<br>
+                                •Carga Rápida: 45W.<br>
+                                •Resistencia: IP65.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Infinix_Note_50_Pro.jpg" alt="[MODELO INFINIX 6]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Note 50 Pro</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.78" AMOLED Curva FHD+, 144Hz.<br>
+                                •Procesador: Helio G100 Ultimate.<br>
+                                •Cámara Principal: 50MP con OIS.<br>
+                                •Batería: 5200 mAh.<br>
+                                •Carga Más Rápida: 90W.<br>
+                                •Carga Inalámbrica: 30W MagCharge.<br>
+                                •Extra: Iluminación IA Bio-Active Halo.<br>
+                                •Resistencia: IP64<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/GT_30_Pro.jpg" alt="[MODELO INFINIX 7]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>GT30 Pro</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.78" AMOLED FHD+, 144Hz.<br>
+                                •Procesador: Dimensity 8350 Ultimate.<br>
+                                •Cámara Principal: 108MP + 8MP Ultra Gran Angular.<br>
+                                •Batería: 5500 mAh.<br>
+                                •Carga Rápida: 45W.<br>
+                                •Carga Inalámbrica: 30W.<br>
+                                •conectividad: 5G.<br>
+                                •Extra: RGB LED trasero y Gatillos Gaming.<br>
+                                •Resistencia: IP64.<br>
+                                •conectividad: 5G.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-tecno')">
+                    Marca: TECNO
+                </button>
+                <div id="sub-tecno" class="contenido-subacordeon">
+                    <div class="detalle-producto">
+                        <img src="images/Tecno_Spark_GO_2.jpg" alt="[MODELO TECNO 1]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Tecno Spark GO 2</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.67" HD+, 120Hz.<br>
+                                •Procesador: UNISOC T7250.<br>
+                                •Cámara Principal: 13MP con IA.<br>
+                                •Batería: 5000 mAh.<br>                       
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Tecno_Spark_40c.jpg" alt="[MODELO TECNO 2]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Tecno Spark 40c</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.67" HD+, 120Hz.<br>
+                                •Procesador: Helio G81.<br>
+                                •Cámara Principal: 13MP Dual con IA.<br>
+                                •Batería: 6000 mAh.<br>
+                                •Carga Rápida: 18W.<br>
+                                •Resistencia: IP64.<br>                   
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Tecno_Spark_40_Pro.jpg" alt="[MODELO TECNO 3]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Tecno Spark 40 Pro</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.78" AMOLED, 144Hz.<br>
+                                •Procesador: MediaTek Helio G100 Ultimate.<br>
+                                •Cámara Principal: 50MP.<br>
+                                •Batería: 5200 mAh.<br>
+                                •Carga Rápida: 45W.<br>
+                                •Resistencia: IP64.<br>               
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="detalle-producto">
+                        <img src="images/Tecno_Spark_40_Pro_Plus.jpg" alt="[MODELO TECNO 4]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Tecno Spark 40 Pro Plus</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.78" 3D AMOLED 1.5k, 144Hz.<br>
+                                •Procesador: MediaTek Helio G200.<br>
+                                •Cámara Principal: 50MP con OIS.<br>
+                                •Batería: 5200 mAh.<br>
+                                •Carga Rápida: 45W.<br>                
+                                •Carga Inalámbrica: 30W.<br>
+                                •Carga Inalámbrica Inversa: 5W.<br>                             
+                                •Resistencia: IP64.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="detalle-producto">
+                        <img src="images/Tecno_Camon_40_Pro.jpg" alt="[MODELO TECNO 4]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Tecno Camon 40 Pro</p>
+                            <p class="descripcion-producto">
+                                •Pantalla: 6.7" o 6.8" AMOLED con 120Hz.<br>
+                                •Procesador: MediaTek Helio G100 Ultimate.<br>
+                                •Cámara Principal: 50MP con OIS.<br>
+                                •Carga Rápida: 45W.<br>
+                                •Batería: 5200 mAh.<br>
+                                •Resistencia: IP68/69.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="subcategoria-acordeon">
+                <button class="boton-subacordeon" onclick="alternarContenido('sub-logic')">
+                    Marca: LOGIC
+                </button>
+                <div id="sub-logic" class="contenido-subacordeon">
+                    <div class="detalle-producto">
+                        <img src="images/B10L.png" alt="[MODELO LOGIC 1]" class="imagen-producto"> 
+                        <div class="info-producto">
+                            <p><strong>Logic B10L</p>
+                            <p class="descripcion-producto">
+                                •Tipo: Teléfono Básico (no smartphone).<br>
+                                •Conectividad: 4G con soporte VoLTE.<br>
+                                •Pantalla: 2.4" LCD.<br>
+                                •Batería: 1800 mAh.<br>
+                                •Carga: Puerto USB Tipo-C.<br>
+                                •Extra: Linterna de acceso directo, Radio FM, Cámara con flash.<br>
+                            </p>
+                            <div class="stock-info">
+                                <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="categoria-acordeon">
+    <button class="boton-acordeon" onclick="alternarContenido('contenido-tablets')">
+        3. Tabletas
+    </button>
+    
+    <div id="contenido-tablets" class="contenido-acordeon">
+                      
+        <div class="subcategoria-acordeon">
+            <button class="boton-subacordeon" onclick="alternarContenido('sub-galaxytab')">
+                Marca: SAMSUNG
+            </button>
+            <div id="sub-galaxytab" class="contenido-subacordeon">
+                <div class="detalle-producto">
+                    <img src="images/Samsung_Tab_A9.jpg" alt="[MODELO GALAXY TAB 1]" class="imagen-producto"> 
+                    <div class="info-producto">
+                        <p><strong>Samsung Tab 9A</p>
+                        <p class="descripcion-producto">
+                            •Pantalla: 8.7" LCD, 60Hz.<br>
+                            •Procesador: MediaTek Helio G99.<br>
+                            •Cámara Principal: 8MP.<br>
+                            •Batería: 5100 mAh.<br>
+                            •Memoria: 8GB RAM / 128GB ROM.<br>
+                            •Audio: Altavoces estéreo con Dolby Atmos.<br>
+                            •Diseño: Cuerpo de metal.<br>
+                            •Conectividad: Opciones Wi-Fi y LTE (4G).<br>
+                        </p>
+                        <div class="stock-info">
+                            <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>       
+        
+        <div class="subcategoria-acordeon">
+            <button class="boton-subacordeon" onclick="alternarContenido('sub-honortab')">
+                Marca: HONOR 
+            </button>
+            <div id="sub-honortab" class="contenido-subacordeon">
+                <div class="detalle-producto">
+                    <img src="images/Honor_pad_X8a.jpg" alt="[MODELO HONOR TAB 1]" class="imagen-producto"> 
+                    <div class="info-producto">
+                        <p><strong>Honor Pad X8a</p>
+                        <p class="descripcion-producto">
+                            •Pantalla: 11" FHD+, 90Hz.<br>
+                            •Procesador: Qualcomm Snapdragon 680.<br>
+                            •Cámara Principal: 5MP.<br>
+                            •Batería: 8300 mAh.<br>
+                            •Memoria: 4GB RAM / 128GB ROM.<br>
+                            •Audio: Altavoces Duales.<br>
+                            •Software: MagicOS 8.<br>
+                            •Peso/Grosor: 495g / 7.25mm.<br>
+                        </p>
+                        <div class="stock-info">
+                            <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="detalle-producto">
+                    <img src="images/Honor_Pad_X9a.jpg" alt="[MODELO HONOR TAB 2]" class="imagen-producto"> 
+                    <div class="info-producto">
+                        <p><strong>Honor Pad X9a</p>
+                        <p class="descripcion-producto">
+                            •Pantalla: 11.5" 120Hz, con resolución 2.5K.<br>
+                            •Procesador: Qualcomm Snapdragon 685.<br>
+                            •Cámara Principal: 8MP.<br>
+                            •Audio: Cuatro Altavoces.<br>
+                            •Batería: 8300 mAh.<br>
+                            •Carga Rápida: 35W.<br>
+                            •Memoria: 8+8GB RAM / 128GB ROM.<br>
+                            •Peso/Grosor: 475g / 6.77mm.<br>
+                            •Software: MagicOS 9.<br>
+                        </p>
+                        <div class="stock-info">
+                            <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcategoria-acordeon">
+            <button class="boton-subacordeon" onclick="alternarContenido('sub-sky-tab')">
+                Marca: SKY
+            </button>
+            <div id="sub-sky-tab" class="contenido-subacordeon">
+                <div class="detalle-producto">
+                    <img src="images/Sky_Pad_8.jpg" alt="[MODELO SKY TAB 1]" class="imagen-producto"> 
+                    <div class="info-producto">
+                        <p><strong>Sky Pad 8</p>
+                        <p class="descripcion-producto">
+                            •Pantalla: 8" HD.<br>
+                            •Procesador: Quad Core 2.0 GHz.<br>
+                            •Cámara Principal: 5MP.<br>
+                            •Batería: 4000 mAh.<br>
+                            •Memoria: 2GB RAM / 32GB ROM.<br>                            
+                            •Conectividad: Wi-Fi, Bluetooth y 4G LTE.<br>
+                        </p>
+                        <div class="stock-info">
+                            <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="categoria-acordeon">
+    <button class="boton-acordeon" onclick="alternarContenido('contenido-computadoras')">
+        4. Laptops
+    </button>
+    
+    <div id="contenido-computadoras" class="contenido-acordeon">
+        
+        <div class="subcategoria-acordeon">
+            <button class="boton-subacordeon" onclick="alternarContenido('sub-chuwi')">
+                Marca: CHUWI
+            </button>
+            <div id="sub-chuwi" class="contenido-subacordeon">
+                <div class="detalle-producto">
+                    <img src="images/Chuwi_HeroBook_Plus_1.jpg" alt="[MODELO CHUWI 1]" class="imagen-producto">
+                    <img src="images/Chuwi_HeroBook_Plus_2.jpg" alt="[MODELO CHUWI 1]" class="imagen-producto">
+                    <img src="images/Chuwi_Herobook_Plus_3.jpg" alt="[MODELO CHUWI 1]" class="imagen-producto"> 
+                    <div class="info-producto">
+                        <p><strong>Chuwi HeroBook Plus</p>
+                        <p class="descripcion-producto">
+                            •Pantalla: 15.6" IPS FHD <br>
+                            •Relacion de Aspecto: 16:9.<br>
+                            •Procesador: Intel Celeron N4020.<br>
+                            •Memoria: 8GB LPDDR4 RAM.<br>
+                            •Almacenamiento: 256GB SSD M.2.<br>
+                            •Batería: 38 Wh.<br>                         
+                            •Conectividad: Wi-Fi 5, Bluetooth 4.2.
+                            Puertos: 2 USB-C, 1 USB-A 3.0, 2 USB-A 2.0, HDMI, RJ45 LAN Port, conector de audio de 3.5 mm, Lock Slot.<br>
+                            •Sistema Operativo: Windows 11.<br>
+                        </p>
+                        <div class="stock-info">
+                            <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="subcategoria-acordeon">
+            <button class="boton-subacordeon" onclick="alternarContenido('sub-acer')">
+                Marca: ACER
+            </button>
+            <div id="sub-acer" class="contenido-subacordeon">
+                <div class="detalle-producto">
+                    <img src="images/Acer_ETBook_Plus_e10_1.jpg" alt="[MODELO ACER 1]" class="imagen-producto">
+                    <img src="images/Acer_ETBook_Plus_e10_2.jpg" alt="[MODELO ACER 1]" class="imagen-producto">
+                    <img src="images/Acer_ETBook_Plus_e10_3.jpg" alt="[MODELO ACER 1]" class="imagen-producto"> 
+                    <div class="info-producto">
+                        <p><strong>Acer ETBook Plus</p>
+                        <p class="descripcion-producto">
+                            •Pantalla: 15.6" FHD.<br>
+                            •Relacion de Aspecto: 16:9.<br>
+                            •Procesador: Intel Inside N100.<br>
+                            •Memoria: RAM 8 GB LPDDR5.<br>
+                            •Almacenamiento: 256 GB SSD.<br> 
+                            •Batería: 38 Wh.<br>                    
+                            •Conectividad: Wi-Fi 6, Bluetooth 5.2.
+                            Puertos: 1 USB-C 3.0, 1 USB-C 2.0, 2 USB-A 3.0, 1 USB-A 2.0, HDMI, RJ45 LAN Port, conector de audio de 3.5 mm.<br>
+                            •Sistema operativo Windows 11.<br>
+                        </p>
+                        <div class="stock-info">
+                            <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    
+    <div class="categoria-acordeon">
+    <button class="boton-acordeon" onclick="alternarContenido('contenido-accesorios')">
+        5. Accesorios
+    </button>
+    
+    <div id="contenido-accesorios" class="contenido-acordeon">
+        
+        <div class="detalle-producto">
+            <img src="images/Cargador_Samsung_ USB_C_25W.avif" alt="[NOMBRE ACCESORIO 1]" class="imagen-producto"> 
+            <div class="info-producto">
+                <p><strong>Cargador Samsung Original USB-C 25W</p>
+                <p class="descripcion-producto">
+                    •Carga Superrápida máx. 25 W, PD 3,0 PPS máx. 25 W, consumo de energía en espera cero (5mW)
+                </p>
+                <div class="stock-info">
+                    <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="detalle-producto">
+            <img src="images/Cargador_Samsung_ USB_C_45W.avif" alt="[NOMBRE ACCESORIO 2]" class="imagen-producto"> 
+            <div class="info-producto">
+                <p><strong>Cargador Samsung Original 45W USB-C Cable / 1.8m  </p>
+                <p class="descripcion-producto">
+                    •Super Fast Charging 2.0 max. 45W, PD 3.0 PDO/PPS max. 45W<br>
+                    •Incluye cable USB-C a USB-C de 1.8m (Soporta 45w)<br>
+                </p>
+                <div class="stock-info">
+                    <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="detalle-producto">
+            <img src="images/Cargador_Samsung_ USB_C_65W_Trio.avif" alt="[NOMBRE ACCESORIO 3]" class="imagen-producto"> 
+            <div class="info-producto">
+                <p><strong>Cargador Samsung Original USB-C 65W Trio</p>
+                <p class="descripcion-producto">
+                    (USB-C1) Super Fast Charging 2.0 max. 45 W, PD 3.0 PDO max. 65 W, 
+                    PPS max. 45 W / (USB-C2) Super Fast Charging max. 25 W, 
+                    PD 3.0 PDO,PPS max. 25 W / (USB-A) AFC,QC max. 15 W / (C1+C2)
+                     40 W + 25 W / (C1+A) 50 W + 15 W / (C2+A) 25 W + 15 W / (all) 35 W + 25 W + 5 W
+                </p>
+                <div class="stock-info">
+                    <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="detalle-producto">
+            <img src="images/Cargador_Apple_USB_C_20W.jpg" alt="[NOMBRE ACCESORIO 4]" class="imagen-producto"> 
+            <div class="info-producto">
+                <p><strong>Cargador Apple Original USB-C 20W</p>
+                <p class="descripcion-producto">
+                    El adaptador de corriente USB-C de 20 W de Apple te permite cargar tu dispositivo
+                     de manera rápida y eficiente en cualquier lugar. Aunque es compatible con cualquier
+                      dispositivo que tenga un puerto USB-C, Apple recomienda usarlo con el iPad Pro y el
+                       iPad Air para obtener una carga óptima. También puedes usarlo con el iPhone 8 o posterior
+                        para aprovechar la funcionalidad de carga rápida.
+                </p>
+                <div class="stock-info">
+                    <span>Stock: <span id="stock-D">Consultar Disponibilidad en Tienda</span></span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+
+    <h3 style="margin-top: 50px;">Información Importante de Envíos</h3>
+    <p>Todos los envíos nacionales se realizan a través de MRW.</p>
+</section>
+        
+    </main>
+
+    <footer>
+        <p>Desarrollado como Proyecto de Pasantías. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
